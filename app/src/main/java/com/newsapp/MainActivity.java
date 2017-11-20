@@ -36,6 +36,7 @@ public class MainActivity extends BaseActivity
         setSupportActionBar(toolbar);
 
 
+
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -46,7 +47,6 @@ public class MainActivity extends BaseActivity
         addNavigationMenuItems();
         navigationView.setNavigationItemSelectedListener(this);
     }
-
     private void addNavigationMenuItems(){
         for(String item : menuItems){
             navigationView.getMenu().add(R.id.menu_group,Menu.NONE,1,item).setCheckable(true);

@@ -8,6 +8,7 @@ import android.view.View;
  */
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
+    public static String TAG = "NEWS_APP";
     @Override
     public void onClick(View view) {
 
